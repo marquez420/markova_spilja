@@ -50,7 +50,15 @@ const Home: NextPage<{
           )}
         </Flex>
       </Flex>
-      <SimpleGrid columns={3} spacing={10} placeItems="center">
+      <SimpleGrid
+        columns={{
+          base: 1,
+          md: 2,
+          lg: 3,
+        }}
+        spacing={10}
+        placeItems="center"
+      >
         {books.map((book) => {
           return <Book key={book.id} book={book} />;
         })}

@@ -9,8 +9,6 @@ export const Book: FC<{
     ? `${Math.abs(book.year)} BC`
     : `${book.year} AC`;
 
-  console.log(book.pages.toString());
-
   return (
     <Box width={350} textAlign="center" p={5}>
       <Text fontSize="xl">{book.title}</Text>
